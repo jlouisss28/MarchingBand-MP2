@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 575%;
+	color: black;
+	text-transform: uppercase;
+	margin: 45% 0;
+	letter-spacing: 1%;
+}
+
+h2 {
+	text-align: center;
+	font-size: 275%;
+	color: black;
+	text-transform: uppercase;
+
+}
+ 
+.parallax {
+	background: url('../images/band5.png') fixed;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+} 
+
+.banner {
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background-size:cover;
+	background-color: #F8F8FF;
+    opacity: .8;
+}
+
+
+body {
+	background: #C6E2FF;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.attendance { 
+    background-image: url("img_parallax.jpg");
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
