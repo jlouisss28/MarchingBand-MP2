@@ -119,5 +119,21 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 
+.members {
+	float: left;
+	width: 23%;
+	/*background-color: white;*/
+	color: white;
+	text-align: center;
+	/*box-shadow: 10px 10px 5px black;*/
+	margin: 5%; 
+	border-radius: 200px;
+}
 
 
+.members img {
+	width: 100%;
+	border-radius: 200px;
+	display: block;
+	height: auto;
+}
