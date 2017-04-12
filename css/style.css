@@ -76,7 +76,7 @@ body {
 
 .attendance {
 	float: left;
-	width: 20%;
+	width: 10%;
 	margin: 6.5%;
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -121,11 +121,9 @@ body {
 
 .members {
 	float: left;
-	width: 23%;
-	/*background-color: white;*/
+	width: 10%;
 	color: white;
 	text-align: center;
-	/*box-shadow: 10px 10px 5px black;*/
 	margin: 5%; 
 	border-radius: 200px;
 }
