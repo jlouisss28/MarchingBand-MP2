@@ -6,20 +6,21 @@
         		-moz-box-sizing: border-box;
         		box-sizing: border-box;
         	}
-        	body{
-        		background-repeat: no-repeat;
-        		-webkit-background-size: cover;
-        		background-size: cover;
-        		background: url('wallpaper.jpg');
-        	}
+			
+			body {
+				background: url('../images/band1.jpeg') fixed 100%;
+				background-size: cover;
+				margin-left: auto;
+				margin-right: auto;
+				margin: 0 auto;
+			}
+			
         	.login-box{
         		width: 500px;
-        		background-color: rgba(1, 1, 20, 0.6);
+        		background-color: none;
         		margin: 100px auto;
-        		border-radius: 10px;
-        		border: 20px ridge #00bfff;
-        		box-shadow: 0 0 20px 5px #000;
         	}
+			
         	.info{
         		width: 100%;
         		padding-top: 10px;
@@ -27,53 +28,53 @@
         		color: #fff;
         		text-align: center;
         		text-shadow: 1px 1px 2px #000;
+				margin-bottom: 8px;
         	}
-        	.form-box{
-        		padding: 25px;
-        	}
+			
+			
         	.inp{
+	
         		width: 100%;
         		padding: 12px;
-        		margin-bottom: 3px;
+        		margin-bottom: 5px;
         		border: none;
-        		border-radius: 5px;
         		font-size: 20px;
         		border-bottom: 2px solid #000;
-        		color: #dc143c;
+        		color: #333;
         	}
+			
         	.inp:focus{
         		outline: none;
-        		border-bottom: 2px solid #dc143c;
-        		color: #dc143c;
+        		border-bottom: 2px solid #333;
+        		color: #333;
         	}
         	.sub-btn{
         		width: 100%;
         		padding: 12px;
-        		border-radius: 5px;
         		border: none;
         		font-size: 20px;
-        		background: linear-gradient(#00bfff,navy);
+        		background:#96CDCD;
         		cursor: pointer;
         		color: #fff;
-        		border-bottom: 2px solid #000;
-        		text-shadow: 1px 1px 1px #000;
+        		border-bottom: 2px;
         	}
         	.sub-btn:hover{
-        		background: linear-gradient(#dc143c,#8b0000);
+        		background: #388E8E;
         		-webkit-transition: all .0.3s;
-        		-o-transition: all .0.3s;
         		transition: all .0.3s;
         	}
         	.sub-btn:focus{
         		outline: none;
-        		box-shadow: 2px 2px 5px 0 #000 inset;
+        		box-shadow: 2px 2px 5px 0 inset;
         	}
+			
         	.rem{
         		margin-bottom: 10px;
         		margin-top: 10px;
         		width: 20px;
         		height: 20px;
         	}
+			
         	span{
         		color: #fff;
         		margin-left: 10px;
@@ -94,25 +95,11 @@
         		font-size: 25px;
         		text-shadow: 0 2px 1px #000;
         	}
-        	.reg{
-        		display: block;
-        		width: 100%;
-        		padding: 12px;
-        		text-align: center;
-        		text-decoration: none;
-        		background: linear-gradient(#dc143c,#8b0000);
-        		color: #fff;
-        		border-radius: 5px;
-        		border-bottom: 2px solid #000;
-        		font-size: 20px;
-        		text-shadow: 1px 1px 1px #000;
-        	}
-        	.reg:hover{
-        		background: linear-gradient(#00bfff,navy);
-        	}
+ 
+			
         	@media (max-width: 720px) {
         		.login-box{
         			width: 90%;
-        			border: 10px ridge #00bfff;
+        			border: 10px;
         		}
         	}
