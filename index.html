@@ -43,63 +43,55 @@
         </select>
     </p>
     </form>
+	
+<!----Instruments here----->
 
-<div class = "attendance instrument">
+<div class = "attendance instrument1" id="btn">
       <figure>
       <img src="images/sample.jpg"  alt="Sample">
         <figcaption>
           <p>Instrument1</p>
         </figcaption>
       </figure>
-  </div>
+</div>
   
-<div class = "attendance instrument">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-        <figcaption>
-          <p>Instrument2</p>
-        </figcaption>
-      </figure>
-  </div>
+ <div id="myModal" class="modal">
 
- 
- <div class = "attendance sample">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+	<a href="#">
+    <div class = "attendance instrument1">
       <figure>
       <img src="images/sample.jpg"  alt="Sample">
         <figcaption>
-          <p>Instrument3</p>
-        <figcaption>
-      </figure>
-  </div>
- 
- <div class = "attendance sample">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-        <figcaption>
-          <p>Instrument4</p>
+          <p>Instrument1</p>
         </figcaption>
       </figure>
+	</div>
+</a>
   </div>
- 
- <div class = "attendance sample">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-		<figcaption>
-          <p>Instrument5</p>
-		 </figcaption>
-      </figure>
-  </div>
- 
- <div class = "attendance sample">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-        <figcaption>
-          <p>Instrument6</p>
-        </figcaption>
-      </figure>
-  </div>
+</div>
 
-	
+
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("btn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
 </body>
 
 <footer>
