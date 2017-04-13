@@ -136,3 +136,8 @@ body {
 .container {
     padding: 2px 16px;
 }
+
+.dropdown {
+	margin-left: 6%;
+	text-decoration: bold;
+}
