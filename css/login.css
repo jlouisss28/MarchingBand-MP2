@@ -64,7 +64,7 @@
         	}
         	.sub-btn:focus{
         		outline: none;
-        		box-shadow: 2px 2px 5px 0 inset;
+        		
         	}
 			
         	.rem{
@@ -81,6 +81,7 @@
         		margin-top: 12px;
         		text-shadow: 1px 1px 1px #000;
         	}
+			
         	.f-pass{
         		float: right;
         		margin-top: 12px;

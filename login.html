@@ -1,14 +1,20 @@
+<!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
-<Link rel ="stylesheet" href="css/login.css"/>
+
+<link rel ="stylesheet" type="text/css" href="css/login.css">
 <link rel="stylesheet" type="text/css" href="css/vanilla.css">
 <link rel="stylesheet" type="text/css" href="css/custom.css">
 <link rel="stylesheet" type="text/css" href="css/vanilla-exrtact.css">
 
 
+
 </head>
+
+<body oncontextmenu="return false">
 
 <div class="main">
   <div class="login-box">
@@ -18,9 +24,24 @@
       <input type="password" name="pass" class="inp" placeholder="password" required><br>
       <input type="checkbox" name="rem" class="rem"><span>Remember me</span>
       <a href="#" class="f-pass">Forgot Password</a>
-      <input type="submit" name="submit" value="Login" class="sub-btn" onclick="window.location='index.html';"> <br>
+      <input type="button" onclick="check(this.form)" value="Login" class="sub-btn"> <br>
     </form>
+	
+	<script type="text/javascript">
+		
+		function check(form) {
+			if (form.username.value == "achecker2017" && form.pass.value == "sluband2017") {
+				window.location.replace("index.html");
+			} else {
+			alert("Username or password incorrect.")
+			}
+			
+		}
+	</script>
+
+	
   </div>
 </div>
 
+</body>
 </html>
