@@ -47,15 +47,15 @@
 <!--Instruments here-->
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Flute')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
-  <button class="tablinks" onclick="openCity(event, 'Clarinet')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
-  <button class="tablinks" onclick="openCity(event, 'Saxophone')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
-  <button class="tablinks" onclick="openCity(event, 'Trumpet')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
-  <button class="tablinks" onclick="openCity(event, 'Trombone')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
-  <button class="tablinks" onclick="openCity(event, 'FrenchHorn')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
-  <button class="tablinks" onclick="openCity(event, 'Bajo')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
-  <button class="tablinks" onclick="openCity(event, 'Baritone')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
-  <button class="tablinks" onclick="openCity(event, 'Percussion')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Flute')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Clarinet')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Saxophone')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Trumpet')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Trombone')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'FrenchHorn')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Bajo')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Baritone')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Percussion')"> <img src="images/sample.jpg"  alt="Sample" width="90px"> </button>
 </div>
 
 <div id="Flute" class="tabcontent">
@@ -850,7 +850,7 @@
 <!-- End of Modal Saxophone -->
 
 <script>
-function openCity(evt, cityName) {
+function openCity(evt, instrumnetName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -860,7 +860,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(instrumnetName).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
