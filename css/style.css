@@ -334,8 +334,6 @@ div.tab button.active {
     transition: 0s
 }
 
-}
-
 .btnAbsent:after {
     content: "";
     background: #da190b;
@@ -360,4 +358,8 @@ div.tab button.active {
     margin-top: -50%;
     opacity: 0;
     transition: all 0.8s
+}
+
+#btn {
+    margin-left: 5px;
 }
