@@ -34,8 +34,8 @@ h3 {
 } 
 
 .banner {
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 8%;
+	padding-bottom: 8%;
 	background-size:cover;
 	background-color: #F8F8FF;
     opacity: .8;
@@ -213,6 +213,7 @@ body {
 /* Style the tab */
 div.tab {
     overflow: hidden;
+    margin-left: 15px;
 }
 
 /* Style the buttons inside the tab */
@@ -272,10 +273,6 @@ div.tab button.active {
     cursor: pointer;
 }
 
-#absent:hover {
-    background: #da190b;
-}
-
 #late {
     background-color: #ff9800;
     position: relative;
@@ -290,10 +287,6 @@ div.tab button.active {
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-}
-
-#late:hover {
-    background: #e68a00;
 }
 
 .btn, #btn {
