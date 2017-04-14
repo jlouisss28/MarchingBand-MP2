@@ -362,3 +362,15 @@ div.tab button.active {
 #btn {
     margin-left: 5px;
 }
+
+.members-column {
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+
+    -webkit-column-gap: 15px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 15px; /* Firefox */
+    column-gap: 15px;
+
+    text-align: center;
+}
