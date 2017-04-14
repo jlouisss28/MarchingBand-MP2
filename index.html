@@ -73,7 +73,14 @@
 
 <div id="Saxophone" class="tabcontent">
   <h3>Saxophone</h3>
-  <p>Saxophone .</p> 
+  <p><button class ="btn" id="Sax1">Tenor</button><button class="tablinks" id="btn" onclick="openCity(event, 'Saxophone2')">Alto</button></p> 
+</div>
+
+<div id="Saxophone2" class="tabcontent">
+  <h3>Alto</h3>
+  <p><button class ="btn" id="Sax2">1st</button>
+  <button class ="btn" id="Sax3">2nd</button>
+  <button class ="btn" id="Sax4">Baritone</button></p>
 </div>
 
 <div id="Trumpet" class="tabcontent">
@@ -274,9 +281,6 @@
   </div>
 </div>
 <!-- End of Modal Clarinet -->
-
-<!-- The Modal Saxophone -->
-<!-- End of Modal Saxophone -->
 
 <!-- The Modal Trumpet -->
 <div id="trum1" class="modal">
@@ -716,8 +720,135 @@
     </div>
   </div>
 </div>
+<!-- End of Modal Percussion -->
 
-<!-- End of Modal Trombone -->
+<!-- The Modal Saxophone -->
+<div id="sax1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl20">&times;</span>
+      <h2>Saxophone Tenor</h2>
+    </div>
+    <div class="modal-body">
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <h3>(c) WEBTEK GROUP3</h3>
+    </div>
+  </div>
+</div>
+<div id="sax2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl21">&times;</span>
+      <h2>Saxophone subgroup 1</h2>
+    </div>
+    <div class="modal-body">
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <h3>(c) WEBTEK GROUP3</h3>
+    </div>
+  </div>
+</div>
+<div id="sax3" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl22">&times;</span>
+      <h2>Saxophone subgroup 2</h2>
+    </div>
+    <div class="modal-body">
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <h3>(c) WEBTEK GROUP3</h3>
+    </div>
+  </div>
+</div>
+<div id="sax4" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl23">&times;</span>
+      <h2>Saxophone Baritone</h2>
+    </div>
+    <div class="modal-body">
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <h3>(c) WEBTEK GROUP3</h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Saxophone -->
+
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -753,6 +884,10 @@ var modal16 = document.getElementById('per1');
 var modal17 = document.getElementById('per2');
 var modal18 = document.getElementById('per3');
 var modal19 = document.getElementById('per4');
+var modal20 = document.getElementById('sax1');
+var modal21 = document.getElementById('sax2');
+var modal22 = document.getElementById('sax3');
+var modal23 = document.getElementById('sax4');
 
 // Get the button that opens the modal
 var btn1 = document.getElementById("Flute1");
@@ -774,6 +909,10 @@ var btn16 = document.getElementById("Per1");
 var btn17 = document.getElementById("Per2");
 var btn18 = document.getElementById("Per3");
 var btn19 = document.getElementById("Per4");
+var btn20 = document.getElementById("Sax1");
+var btn21 = document.getElementById("Sax2");
+var btn22 = document.getElementById("Sax3");
+var btn23 = document.getElementById("Sax4");
 
 // Get the <span> element that closes the modal
 var span1 = document.getElementsByClassName("cl1")[0];
@@ -795,6 +934,10 @@ var span16 = document.getElementsByClassName("cl16")[0];
 var span17 = document.getElementsByClassName("cl17")[0];
 var span18 = document.getElementsByClassName("cl18")[0];
 var span19 = document.getElementsByClassName("cl19")[0];
+var span20 = document.getElementsByClassName("cl20")[0];
+var span21 = document.getElementsByClassName("cl21")[0];
+var span22 = document.getElementsByClassName("cl22")[0];
+var span23 = document.getElementsByClassName("cl23")[0];
 
 // When the user clicks the button, open the modal 
 btn1.onclick = function() {
@@ -853,6 +996,18 @@ btn18.onclick = function() {
 }
 btn19.onclick = function() {
     modal19.style.display = "block";
+}
+btn20.onclick = function() {
+    modal20.style.display = "block";
+}
+btn21.onclick = function() {
+    modal21.style.display = "block";
+}
+btn22.onclick = function() {
+    modal22.style.display = "block";
+}
+btn23.onclick = function() {
+    modal23.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -913,6 +1068,18 @@ span18.onclick = function() {
 span19.onclick = function() {
     modal19.style.display = "none";
 }
+span20.onclick = function() {
+    modal20.style.display = "none";
+}
+span21.onclick = function() {
+    modal21.style.display = "none";
+}
+span22.onclick = function() {
+    modal22.style.display = "none";
+}
+span23.onclick = function() {
+    modal23.style.display = "none";
+}
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -955,6 +1122,14 @@ window.onclick = function(event) {
         modal18.style.display = "none";
     } else if(event.target == modal19) {
         modal19.style.display = "none";
+    } else if(event.target == modal20) {
+        modal20.style.display = "none";
+    } else if(event.target == modal21) {
+        modal21.style.display = "none";
+    } else if(event.target == modal22) {
+        modal22.style.display = "none";
+    } else if(event.target == modal23) {
+        modal23.style.display = "none";
     }
 }
 </script>
