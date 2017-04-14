@@ -246,6 +246,14 @@ div.tab button.active {
     animation: fadeEffect 1s;
 }
 
+.tabcontent h3, .tabcontent p {
+    text-align: center;
+}
+
+.tabcontent h3 {
+    margin-bottom: 5px;
+}
+
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
