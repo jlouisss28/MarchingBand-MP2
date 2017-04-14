@@ -257,3 +257,19 @@ div.tab button.active {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+#absent {
+    background-color: #ff4336;
+}
+
+#absent:hover {
+    background: #da190b;
+}
+
+#late {
+    background-color: #ff9800;
+}
+
+#late:hover {
+    background: #e68a00;
+}

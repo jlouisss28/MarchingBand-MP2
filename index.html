@@ -48,16 +48,28 @@
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Flute')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Clarinet')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
   <button class="tablinks" onclick="openCity(event, 'Saxophone')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
   <button class="tablinks" onclick="openCity(event, 'Trumpet')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Trombone')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'FrenchHorn')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Bajo')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Baritone')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Percussion')"> <img src="images/sample.jpg"  alt="Sample" width="50px"> </button>
 </div>
 
 <div id="Flute" class="tabcontent">
   <h3>Flute</h3>
-  <p><button id="myBtn1">1st</button>
-  <button id="myBtn2">2nd</button></p>
+  <p><button id="Flute1">1st</button>
+  <button id="Flute2">2nd</button></p>
 </div>
 
+<div id="Clarinet" class="tabcontent">
+  <h3>Clarinent</h3>
+  <p><button id="Clar1">1st</button>
+  <button id="Clar2">2nd</button>
+  <button id="Clar3">3rd</button></p>
+</div>
 
 <div id="Saxophone" class="tabcontent">
   <h3>Saxophone</h3>
@@ -66,35 +78,60 @@
 
 <div id="Trumpet" class="tabcontent">
   <h3>Trumpet</h3>
+  <p>Saxophone .</p> 
+</div>
+
+<div id="Trombone" class="tabcontent">
+  <h3>Trombone</h3>
+  <p>Saxophone .</p> 
+</div>
+
+<div id="FrenchHorn" class="tabcontent">
+  <h3>French Horn</h3>
+  <p>Saxophone .</p> 
+</div>
+
+<div id="Bajo" class="tabcontent">
+  <h3>Bajo</h3>
+  <p>Saxophone .</p> 
+</div>
+
+<div id="Baritone" class="tabcontent">
+  <h3>Baritone</h3>
+  <p>Saxophone .</p> 
+</div>
+
+<div id="Percussion" class="tabcontent">
+  <h3>Percussion</h3>
   <p>Trumpet .</p>
 </div>
 
 <!-- The Modal -->
-<div id="myModal1" class="modal">
+<div id="flute1" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      <span class="close1">&times;</span>
+      <span class="cl1">&times;</span>
       <h2>Flute subgroup 1</h2>
     </div>
     <div class="modal-body">
       <figure>
       <img src="images/sample.jpg"  alt="Sample" width="50px">
           <p>Member1</p>
-          <button class="absent">Absent</button>
-          <button class="late">Late</button>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
       </figure>
       <figure>
       <img src="images/sample.jpg"  alt="Sample" width="50px">
           <p>Member2</p>
-          <button class="absent">Absent</button>
-          <button class="late">Late</button>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
       </figure>
       <figure>
       <img src="images/sample.jpg"  alt="Sample" width="50px">
           <p>Member3</p>
-          <button class="absent">Absent</button>
-          <button class="late">Late</button>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
       </figure>
     </div>
     <div class="modal-footer">
@@ -103,12 +140,12 @@
   </div>
 </div>
 <!-- The Modal -->
-<div id="myModal2" class="modal">
+<div id="flute2" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
-      <span class="close2">&times;</span>
+      <span class="cl2">&times;</span>
       <h2>Flute subgroup 2</h2>
     </div>
     <div class="modal-body">
@@ -123,6 +160,108 @@
       <figure>
       <img src="images/sample.jpg"  alt="Sample" width="50px">
           <p>Member3</p>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <h3>(c) WEBTEK GROUP3</h3>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="clar1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl3">&times;</span>
+      <h2>Clarinet subgroup 1</h2>
+    </div>
+    <div class="modal-body">
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <h3>(c) WEBTEK GROUP3</h3>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="clar2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl4">&times;</span>
+      <h2>Clarinet subgroup 2</h2>
+    </div>
+    <div class="modal-body">
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
+      </figure>
+    </div>
+    <div class="modal-footer">
+      <h3>(c) WEBTEK GROUP3</h3>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="clar3" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl5">&times;</span>
+      <h2>Clarinet subgroup 3</h2>
+    </div>
+    <div class="modal-body">
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/sample.jpg"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btn" id="absent">Absent</button>
+          <button class="btn" id="late">Late</button>
       </figure>
     </div>
     <div class="modal-footer">
@@ -146,16 +285,25 @@ function openCity(evt, cityName) {
 }
 
 // Get the modal
-var modal1 = document.getElementById('myModal1');
-var modal2 = document.getElementById('myModal2');
+var modal1 = document.getElementById('flute1');
+var modal2 = document.getElementById('flute2');
+var modal3 = document.getElementById('clar1');
+var modal4 = document.getElementById('clar2');
+var modal5 = document.getElementById('clar3');
 
 // Get the button that opens the modal
-var btn1 = document.getElementById("myBtn1");
-var btn2 = document.getElementById("myBtn2");
+var btn1 = document.getElementById("Flute1");
+var btn2 = document.getElementById("Flute2");
+var btn3 = document.getElementById("Clar1");
+var btn4 = document.getElementById("Clar2");
+var btn5 = document.getElementById("Clar3");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close1")[0];
-var span1 = document.getElementsByClassName("close2")[0];
+var span = document.getElementsByClassName("cl1")[0];
+var span1 = document.getElementsByClassName("cl2")[0];
+var span2 = document.getElementsByClassName("cl3")[0];
+var span3 = document.getElementsByClassName("cl4")[0];
+var span4 = document.getElementsByClassName("cl5")[0];
 
 // When the user clicks the button, open the modal 
 btn1.onclick = function() {
@@ -164,6 +312,16 @@ btn1.onclick = function() {
 btn2.onclick = function() {
     modal2.style.display = "block";
 }
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+btn5.onclick = function() {
+    modal5.style.display = "block";
+}
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -172,6 +330,15 @@ span.onclick = function() {
 span1.onclick = function() {
     modal2.style.display = "none";
 }
+span2.onclick = function() {
+    modal3.style.display = "none";
+}
+span3.onclick = function() {
+    modal4.style.display = "none";
+}
+span4.onclick = function() {
+    modal5.style.display = "none";
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -179,6 +346,12 @@ window.onclick = function(event) {
         modal1.style.display = "none";
     } else if(event.target == modal2) {
         modal2.style.display = "none";
+    } else if(event.target == modal3) {
+        modal3.style.display = "none";
+    } else if(event.target == modal4) {
+        modal4.style.display = "none";
+    } else if(event.target == modal5) {
+        modal5.style.display = "none";
     }
 }
 </script>
