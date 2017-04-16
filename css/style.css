@@ -382,6 +382,19 @@ footer {
     color: black;
     text-align: center;
     height:30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5%;
+}
+
+.footerindex {
+	clear: both;
+    background-color: gray;
+    letter-spacing: 5px;
+    color: black;
+    text-align: center;
+    height:30px;
     position: absolute;
     right: 0;
     bottom: 0;
