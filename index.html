@@ -12,6 +12,8 @@
 <link rel="stylesheet" type="text/css" href="css/vanilla-exrtact.css">
 <link rel="icon" href="images/bandlogo.png">
 
+<script src="summary.js"></script>
+
 	<div class="topnav">
 		<ul class="navbar">
 			<li style="list-style: none"><a href="index.html">Check Attendance</a></li>
@@ -133,9 +135,9 @@
       <div class="members-column">
       <figure>
       <img src="images/1.png"  alt="Sample" width="50px">
-          <p>Member1</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <p class="name" id="1">Member1</p>
+          <button class="btnAbsent" id="absent" onclick="SaveAbsent()">Absent</button>
+          <button class="btnLate" id="late" onclick="SaveLate()">Late</button>
       </figure>
       <figure>
       <img src="images/2.png"  alt="Sample" width="50px">
