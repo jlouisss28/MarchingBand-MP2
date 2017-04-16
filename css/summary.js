@@ -12,6 +12,11 @@ function SaveLate() {
 	showAll();
 }
 
+function ClearAll() {
+	localStorage.clear();
+	showAll();
+}
+
 // dynamically draw the table
 function showAll() {
 	if (CheckBrowser()) {
