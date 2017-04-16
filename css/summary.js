@@ -1,13 +1,13 @@
 function SaveAbsent() {
-	var name = document.getElementById("1");
-	var attendance = document.getElementById("absent");
+	var name = document.getElementById("1").innerHTML;
+	var attendance = document.getElementById("absent").innerHTML;
 	localStorage.setItem(name, attendance);
 	showAll();
 }
 
 function SaveLate() {
-	var name = document.getElementById("1");
-	var attendance = document.getElementById("late");
+	var name = document.getElementById("1").innerHTML;
+	var attendance = document.getElementById("late").innerHTML;
 	localStorage.setItem(name, attendance);
 	showAll();
 }
