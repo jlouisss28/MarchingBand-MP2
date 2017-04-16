@@ -215,7 +215,7 @@ body {
 /* Style the tab */
 div.tab {
     overflow: hidden;
-	margin: 50px 100px 100px 100px;
+	margin: 50px 100px 0px 100px;
 }
 
 /* Style the buttons inside the tab */
