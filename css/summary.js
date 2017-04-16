@@ -16,14 +16,14 @@ function SaveLate() {
 function showAll() {
 	if (CheckBrowser()) {
 		var key = "";
-		var list = "<tr><th>Name</th><th>Attendance</th></tr>\n";
+		var list = "<tr><th>Name</th>\n<th>Attendance</th></tr>\n";
 		var i = 0;
 		for (i = 0; i <= localStorage.length - 1; i++) {
 			key = localStorage.key(i);
 			list += "<tr><td>" + key + "</td>\n<td>"
 					+ localStorage.getItem(key) + "</td></tr>\n";
 		}
-		if (list == "<tr><th>Name</th><th>Attendance</th></tr>\n") {
+		if (list == "<tr><th>Name</th>\n<th>Attendance</th></tr>\n") {
 			list += "<tr><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n";
 		}
 		document.getElementById('atlist').innerHTML = list;
