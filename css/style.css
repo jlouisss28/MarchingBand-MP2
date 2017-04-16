@@ -34,8 +34,8 @@ h3 {
 } 
 
 .banner {
-	padding-top: 8%;
-	padding-bottom: 8%;
+	padding-top: 6%;
+	padding-bottom: 6%;
 	background-size:cover;
 	background-color: #F8F8FF;
     opacity: .8;
@@ -373,4 +373,18 @@ div.tab button.active {
     column-gap: 15px;
 
     text-align: center;
+}
+
+footer {
+    clear: both;
+    background-color: gray;
+    letter-spacing: 5px;
+    color: black;
+    text-align: center;
+    height:30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5%;
 }
