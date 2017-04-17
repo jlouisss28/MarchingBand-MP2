@@ -376,6 +376,25 @@ div.tab button.active {
     text-align: center;
  }
 
+#summarycontainer {
+    border: 1px dotted blue;
+    padding: 6px;
+    background-color: #ccc;
+    margin-right: 50%;
+}
+
+#absencesTardines_table {
+    border: 5px dotted blue;
+    padding: 10px;
+    margin-top: 12px;
+    margin-right: 50%;
+}
+
+#absencesTardines_table h2 {
+    font-size: 18px;
+    margin-top: 0px;
+    font-family: sans-serif;
+}
 /*footer {
     clear: both;
     background-color: gray;
