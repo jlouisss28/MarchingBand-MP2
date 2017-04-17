@@ -2,19 +2,27 @@
 
 
 <head>
+<title>Check Attendance</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandheldFriendly" content="true">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/vanilla.css">
 <link rel="stylesheet" type="text/css" href="css/custom.css">
-<link rel="stylesheet" type="text/css" href="css/vanilla-exrtact.css">
+<link rel="stylesheet" type="text/css" href="css/vanilla-extract.css">
+<link rel="icon" href="images/bandlogo.png">
+
+<script src="css/summary.js"></script>
 
 	<div class="topnav">
 		<ul class="navbar">
 			<li style="list-style: none"><a href="index.html">Check Attendance</a></li>
 			<li style="list-style: none"><a href="members.html">Members</a></li>
+<<<<<<< HEAD
 			<li style="list-style: none"><a href="#">Reports</a></li>
+=======
+			<li style="list-style: none"><a href="reports.html">Reports</a></li>
+>>>>>>> 3733b3bbe596e14398586a2f0131a8cdf0b5c5fc
 			<li style="list-style: none"><a href="login.html">Log out</a></li>
 		</ul>
 	</div>
@@ -25,71 +33,2341 @@
 
 <section class="parallax">
 <div class="banner">
-	<h1>Saint Louis University Band</h1>
-	
+	<h1>Saint Louis University</h1>
+  <h2>Marching Band</h2>	
 </div>
 </section>
 
 <h2>Check Attendance</h2>
 
-<div class = "attendance instrument">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-        <div class="overlay">
-          <p>Instrument1</p>
-        </div>
-      </figure>
-  </div>
-  
-<div class = "attendance instrument">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-        <div class="overlay">
-          <p>Instrument2</p>
-        </div>
-      </figure>
-  </div>
-
- 
- <div class = "attendance sample">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-        <div class="overlay">
-          <p>Instrument3</p>
-        </div>
-      </figure>
-  </div>
- 
- <div class = "attendance sample">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-        <div class="overlay">
-          <p>Instrument4</p>
-        </div>
-      </figure>
-  </div>
- 
- <div class = "attendance sample">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-		<div class="overlay">
-          <p>Instrument5</p>
-		 </div>
-      </figure>
-  </div>
- 
- <div class = "attendance sample">
-      <figure>
-      <img src="images/sample.jpg"  alt="Sample">
-        <div class="overlay">
-          <p>Instrument6</p>
-        </div>
-      </figure>
-  </div>
-
+<form class="dropdown">
+    <p>
+      <label>Type of Event: </label>
+        <select id = "myList">
+			<option value = "default">--Select--</option>
+			<option value = "1">Engagement</option>
+            <option value = "2">Practice</option>
+        </select>
+    </p>
+    </form>
 	
+<!--Instruments here-->
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Flute')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Clarinet')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Saxophone')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Trumpet')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Trombone')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'FrenchHorn')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Bajo')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Baritone')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+  <button class="tablinks" onclick="openCity(event, 'Percussion')"> <img src="images/sample.jpg"  alt="Sample" width="128px"> </button>
+</div>
+
+<div id="Flute" class="tabcontent">
+  <h3>Flute</h3>
+  <p><button class ="btn" id="Flute1">1st</button>
+  <button class ="btn" id="Flute2">2nd</button></p>
+</div>
+
+<div id="Clarinet" class="tabcontent">
+  <h3>Clarinent</h3>
+  <p><button class ="btn" id="Clar1">1st</button>
+  <button class ="btn" id="Clar2">2nd</button>
+  <button class ="btn" id="Clar3">3rd</button></p>
+</div>
+
+<div id="Saxophone" class="tabcontent">
+  <h3>Saxophone</h3>
+  <p><button class ="btn" id="Sax1">Tenor</button><button class="tablinks" id="btn" onclick="openCity(event, 'Saxophone2')">Alto</button></p> 
+</div>
+
+<div id="Saxophone2" class="tabcontent">
+  <h3>Alto</h3>
+  <p><button class ="btn" id="Sax2">1st</button>
+  <button class ="btn" id="Sax3">2nd</button>
+  <button class ="btn" id="Sax4">Baritone</button></p>
+</div>
+
+<div id="Trumpet" class="tabcontent">
+  <h3>Trumpet</h3>
+  <p><button class ="btn" id="Trum1">1st</button>
+  <button class ="btn" id="Trum2">2nd</button>
+  <button class ="btn" id="Trum3">3rd</button></p>
+</div>
+
+<div id="Trombone" class="tabcontent">
+  <h3>Trombone</h3>
+  <p><button class ="btn" id="Trom1">1st</button>
+  <button class ="btn" id="Trom2">2nd</button>
+  <button class ="btn" id="Trom3">3rd</button></p> 
+</div>
+
+<div id="FrenchHorn" class="tabcontent">
+  <h3>French Horn</h3>
+  <p><button class ="btn" id="FH1">1st</button>
+  <button class ="btn" id="FH2">2nd</button></p> 
+</div>
+
+<div id="Bajo" class="tabcontent">
+  <h3>Bajo</h3>
+  <p><button class ="btn" id="Bajo1">1st</button></p> 
+</div>
+
+<div id="Baritone" class="tabcontent">
+  <h3>Baritone</h3>
+  <p><button class ="btn" id="Bari1">1st</button></p> 
+</div>
+
+<div id="Percussion" class="tabcontent">
+  <h3>Percussion</h3>
+  <p><button class ="btn" id="Per1">Bass</button>
+  <button class ="btn" id="Per2">Snare</button>
+  <button class ="btn" id="Per3">Quadro</button>
+  <button class ="btn" id="Per4">Cymbals</button></p> 
+</div>
+
+<!-- The Modal Flute-->
+<div id="flute1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl1">&times;</span>
+      <h2>Flute subgroup 1</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p class="name" id="1">Member1</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem1Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem1Late()">
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem2Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem2Late()">
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem3Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem3Late()">
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem4Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem4Late()">
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem5Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem5Late()">
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem6Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem6Late()">
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem7Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem7Late()">
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem8Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem8Late()">
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem9Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem9Late()">
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem10Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem10Late()">
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="flute2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl2">&times;</span>
+      <h2>Flute subgroup 2</h2>
+    </div>
+    <div class="modal-body">
+     <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem1Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem1Late()">
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem2Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem2Late()">
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem3Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem3Late()">
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem4Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem4Late()">
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem5Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem5Late()">
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem6Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem6Late()">
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem7Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem7Late()">
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem8Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem8Late()">
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem9Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem9Late()">
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute2Mem10Abs()">
+          <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute2Mem10Late()">
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Flute -->
+
+<!-- The Modal Clarinet -->
+<div id="clar1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl3">&times;</span>
+      <h2>Clarinet subgroup 1</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p id="mem1Clar1">Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p id="mem2Clar1">Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p id="mem3Clar1">Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p id="mem4Clar1">Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p id="mem5Clar1">Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p id="mem6Clar1">Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p id="mem7Clar1">Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p id="mem8Clar1">Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p id="mem9Clar1">Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p id="mem10Clar1">Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="clar2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl4">&times;</span>
+      <h2>Clarinet subgroup 2</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="clar3" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl5">&times;</span>
+      <h2>Clarinet subgroup 3</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Clarinet -->
+
+<!-- The Modal Trumpet -->
+<div id="trum1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl6">&times;</span>
+      <h2>Trumpet subgroup 1</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="trum2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl7">&times;</span>
+      <h2>Trumpet subgroup 2</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="trum3" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl8">&times;</span>
+      <h2>Trumpet subgroup 3</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Trombone -->
+
+<!-- The Modal Trumpet -->
+<div id="trom1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl9">&times;</span>
+      <h2>Trombone subgroup 1</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="trom2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl10">&times;</span>
+      <h2>Trombone subgroup 2</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="trom3" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl11">&times;</span>
+      <h2>Trombone subgroup 3</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Trombone -->
+
+<!-- The Modal French Horn-->
+<div id="fh1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl12">&times;</span>
+      <h2>French Horn subgroup 1</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="fh2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl13">&times;</span>
+      <h2>French Horn subgroup 2</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Flute -->
+
+<!-- The Modal Bajo-->
+<div id="bajo1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl14">&times;</span>
+      <h2>Bajo</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Bajo -->
+
+<!-- The Modal Baritone -->
+<div id="bar1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl15">&times;</span>
+      <h2>Baritone</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Baritone -->
+
+<!-- The Modal Percussion -->
+<div id="per1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl16">&times;</span>
+      <h2>Bass</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="per2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl17">&times;</span>
+      <h2>Snare</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="per3" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl18">&times;</span>
+      <h2>Quadro</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+  </div>
+  <div id="per4" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl19">&times;</span>
+      <h2>Cymbals</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Percussion -->
+
+<!-- The Modal Saxophone -->
+<div id="sax1" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl20">&times;</span>
+      <h2>Tenor</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="sax2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl21">&times;</span>
+      <h2>Saxophone subgroup 1</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="sax3" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl22">&times;</span>
+      <h2>Saxophone subgroup 2</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<div id="sax4" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="cl23">&times;</span>
+      <h2>Baritone</h2>
+    </div>
+    <div class="modal-body">
+      <div class="members-column">
+      <figure>
+      <img src="images/1.png"  alt="Sample" width="50px">
+          <p>Member1</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/2.png"  alt="Sample" width="50px">
+          <p>Member2</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/3.png"  alt="Sample" width="50px">
+          <p>Member3</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/4.png"  alt="Sample" width="50px">
+          <p>Member4</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/5.png"  alt="Sample" width="50px">
+          <p>Member5</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/6.png"  alt="Sample" width="50px">
+          <p>Member6</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/7.png"  alt="Sample" width="50px">
+          <p>Member7</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/8.png"  alt="Sample" width="50px">
+          <p>Member8</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/9.png"  alt="Sample" width="50px">
+          <p>Member9</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      <figure>
+      <img src="images/10.png"  alt="Sample" width="50px">
+          <p>Member10</p>
+          <button class="btnAbsent" id="absent">Absent</button>
+          <button class="btnLate" id="late">Late</button>
+      </figure>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <h3>Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </h3>
+    </div>
+  </div>
+</div>
+<!-- End of Modal Saxophone -->
+
+<script>
+function openCity(evt, instrumnetName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(instrumnetName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the modal
+var modal1 = document.getElementById('flute1');
+var modal2 = document.getElementById('flute2');
+var modal3 = document.getElementById('clar1');
+var modal4 = document.getElementById('clar2');
+var modal5 = document.getElementById('clar3');
+var modal6 = document.getElementById('trum1');
+var modal7 = document.getElementById('trum2');
+var modal8 = document.getElementById('trum3');
+var modal9 = document.getElementById('trom1');
+var modal10 = document.getElementById('trom2');
+var modal11 = document.getElementById('trom3');
+var modal12 = document.getElementById('fh1');
+var modal13 = document.getElementById('fh2');
+var modal14 = document.getElementById('bajo1');
+var modal15 = document.getElementById('bar1');
+var modal16 = document.getElementById('per1');
+var modal17 = document.getElementById('per2');
+var modal18 = document.getElementById('per3');
+var modal19 = document.getElementById('per4');
+var modal20 = document.getElementById('sax1');
+var modal21 = document.getElementById('sax2');
+var modal22 = document.getElementById('sax3');
+var modal23 = document.getElementById('sax4');
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("Flute1");
+var btn2 = document.getElementById("Flute2");
+var btn3 = document.getElementById("Clar1");
+var btn4 = document.getElementById("Clar2");
+var btn5 = document.getElementById("Clar3");
+var btn6 = document.getElementById("Trum1");
+var btn7 = document.getElementById("Trum2");
+var btn8 = document.getElementById("Trum3");
+var btn9 = document.getElementById("Trom1");
+var btn10 = document.getElementById("Trom2");
+var btn11 = document.getElementById("Trom3");
+var btn12 = document.getElementById("FH1");
+var btn13 = document.getElementById("FH2");
+var btn14 = document.getElementById("Bajo1");
+var btn15 = document.getElementById("Bari1");
+var btn16 = document.getElementById("Per1");
+var btn17 = document.getElementById("Per2");
+var btn18 = document.getElementById("Per3");
+var btn19 = document.getElementById("Per4");
+var btn20 = document.getElementById("Sax1");
+var btn21 = document.getElementById("Sax2");
+var btn22 = document.getElementById("Sax3");
+var btn23 = document.getElementById("Sax4");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("cl1")[0];
+var span2 = document.getElementsByClassName("cl2")[0];
+var span3 = document.getElementsByClassName("cl3")[0];
+var span4 = document.getElementsByClassName("cl4")[0];
+var span5 = document.getElementsByClassName("cl5")[0];
+var span6 = document.getElementsByClassName("cl6")[0];
+var span7 = document.getElementsByClassName("cl7")[0];
+var span8 = document.getElementsByClassName("cl8")[0];
+var span9 = document.getElementsByClassName("cl9")[0];
+var span10 = document.getElementsByClassName("cl10")[0];
+var span11 = document.getElementsByClassName("cl11")[0];
+var span12 = document.getElementsByClassName("cl12")[0];
+var span13 = document.getElementsByClassName("cl13")[0];
+var span14 = document.getElementsByClassName("cl14")[0];
+var span15 = document.getElementsByClassName("cl15")[0];
+var span16 = document.getElementsByClassName("cl16")[0];
+var span17 = document.getElementsByClassName("cl17")[0];
+var span18 = document.getElementsByClassName("cl18")[0];
+var span19 = document.getElementsByClassName("cl19")[0];
+var span20 = document.getElementsByClassName("cl20")[0];
+var span21 = document.getElementsByClassName("cl21")[0];
+var span22 = document.getElementsByClassName("cl22")[0];
+var span23 = document.getElementsByClassName("cl23")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+    modal1.style.display = "block";
+}
+btn2.onclick = function() {
+    modal2.style.display = "block";
+}
+btn3.onclick = function() {
+    modal3.style.display = "block";
+}
+btn4.onclick = function() {
+    modal4.style.display = "block";
+}
+btn5.onclick = function() {
+    modal5.style.display = "block";
+}
+btn6.onclick = function() {
+    modal6.style.display = "block";
+}
+btn7.onclick = function() {
+    modal7.style.display = "block";
+}
+btn8.onclick = function() {
+    modal8.style.display = "block";
+}
+btn9.onclick = function() {
+    modal9.style.display = "block";
+}
+btn10.onclick = function() {
+    modal10.style.display = "block";
+}
+btn11.onclick = function() {
+    modal11.style.display = "block";
+}
+btn12.onclick = function() {
+    modal12.style.display = "block";
+}
+btn13.onclick = function() {
+    modal13.style.display = "block";
+}
+btn14.onclick = function() {
+    modal14.style.display = "block";
+}
+btn15.onclick = function() {
+    modal15.style.display = "block";
+}
+btn16.onclick = function() {
+    modal16.style.display = "block";
+}
+btn17.onclick = function() {
+    modal17.style.display = "block";
+}
+btn18.onclick = function() {
+    modal18.style.display = "block";
+}
+btn19.onclick = function() {
+    modal19.style.display = "block";
+}
+btn20.onclick = function() {
+    modal20.style.display = "block";
+}
+btn21.onclick = function() {
+    modal21.style.display = "block";
+}
+btn22.onclick = function() {
+    modal22.style.display = "block";
+}
+btn23.onclick = function() {
+    modal23.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+span3.onclick = function() {
+    modal3.style.display = "none";
+}
+span4.onclick = function() {
+    modal4.style.display = "none";
+}
+span5.onclick = function() {
+    modal5.style.display = "none";
+}
+span6.onclick = function() {
+    modal6.style.display = "none";
+}
+span7.onclick = function() {
+    modal7.style.display = "none";
+}
+span8.onclick = function() {
+    modal8.style.display = "none";
+}
+span9.onclick = function() {
+    modal9.style.display = "none";
+}
+span10.onclick = function() {
+    modal10.style.display = "none";
+}
+span11.onclick = function() {
+    modal11.style.display = "none";
+}
+span12.onclick = function() {
+    modal12.style.display = "none";
+}
+span13.onclick = function() {
+    modal13.style.display = "none";
+}
+span14.onclick = function() {
+    modal14.style.display = "none";
+}
+span15.onclick = function() {
+    modal15.style.display = "none";
+}
+span16.onclick = function() {
+    modal16.style.display = "none";
+}
+span17.onclick = function() {
+    modal17.style.display = "none";
+}
+span18.onclick = function() {
+    modal18.style.display = "none";
+}
+span19.onclick = function() {
+    modal19.style.display = "none";
+}
+span20.onclick = function() {
+    modal20.style.display = "none";
+}
+span21.onclick = function() {
+    modal21.style.display = "none";
+}
+span22.onclick = function() {
+    modal22.style.display = "none";
+}
+span23.onclick = function() {
+    modal23.style.display = "none";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    } else if(event.target == modal2) {
+        modal2.style.display = "none";
+    } else if(event.target == modal3) {
+        modal3.style.display = "none";
+    } else if(event.target == modal4) {
+        modal4.style.display = "none";
+    } else if(event.target == modal5) {
+        modal5.style.display = "none";
+    } else if(event.target == modal6) {
+        modal6.style.display = "none";
+    } else if(event.target == modal7) {
+        modal7.style.display = "none";
+    } else if(event.target == modal8) {
+        modal8.style.display = "none";
+    } else if(event.target == modal9) {
+        modal9.style.display = "none";
+    } else if(event.target == modal10) {
+        modal10.style.display = "none";
+    } else if(event.target == modal11) {
+        modal11.style.display = "none";
+    } else if(event.target == modal12) {
+        modal12.style.display = "none";
+    } else if(event.target == modal13) {
+        modal13.style.display = "none";
+    } else if(event.target == modal14) {
+        modal14.style.display = "none";
+    } else if(event.target == modal15) {
+        modal15.style.display = "none";
+    } else if(event.target == modal16) {
+        modal16.style.display = "none";
+    } else if(event.target == modal17) {
+        modal17.style.display = "none";
+    } else if(event.target == modal18) {
+        modal18.style.display = "none";
+    } else if(event.target == modal19) {
+        modal19.style.display = "none";
+    } else if(event.target == modal20) {
+        modal20.style.display = "none";
+    } else if(event.target == modal21) {
+        modal21.style.display = "none";
+    } else if(event.target == modal22) {
+        modal22.style.display = "none";
+    } else if(event.target == modal23) {
+        modal23.style.display = "none";
+    }
+}
+
+//absences
+function saveFlute1Mem1Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem1', today);
+}
+
+function saveFlute1Mem2Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem2', today);
+}
+
+function saveFlute1Mem3Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem3', today);
+}
+
+function saveFlute1Mem4Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem4', today);
+}
+
+function saveFlute1Mem5Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem5', today);
+}
+
+function saveFlute1Mem6Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem6', today);
+}
+
+function saveFlute1Mem7Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem7', today);
+}
+
+function saveFlute1Mem8Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem8', today);
+}
+
+function saveFlute1Mem9Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem9', today);
+}
+
+function saveFlute1Mem10Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute1mem10', today);
+}
+
+function saveFlute2Mem1Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentflute2mem1', today);
+}
+
+function saveFlute2Mem2Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem2', today);
+}
+
+function saveFlute2Mem3Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem3', today);
+}
+
+function saveFlute3Mem4Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem4', today);
+}
+
+function saveFlute2Mem5Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem5', today);
+}
+
+function saveFlute2Mem6Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem6', today);
+}
+
+function saveFlute2Mem7Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem7', today);
+}
+
+function saveFlute2Mem8Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem8', today);
+}
+
+function saveFlute2Mem9Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem9', today);
+}
+
+function saveFlute2Mem10Abs() {
+    var today = new Date();	
+	localStorage.setItem('absentFlute2Mem10', today);
+}
+
+//late
+function saveFlute1Mem1Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem1', today);
+}
+
+function saveFlute1Mem2Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem2', today);
+}
+
+function saveFlute1Mem3Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem3', today);
+}
+
+function saveFlute1Mem4Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem4', today);
+}
+
+function saveFlute1Mem5Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem5', today);
+}
+
+function saveFlute1Mem6Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem6', today);
+}
+
+function saveFlute1Mem7Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem7', today);
+}
+
+function saveFlute1Mem8Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem8', today);
+}
+
+function saveFlute1Mem9Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem9', today);
+}
+
+function saveFlute1Mem10Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute1mem10', today);
+}
+
+function saveFlute2Mem1Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem1', today);
+}
+
+function saveFlute2Mem2Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem2', today);
+}
+
+function saveFlute2Mem3Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem3', today);
+}
+
+function saveFlute2Mem4Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem4', today);
+}
+
+function saveFlute2Mem5Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem5', today);
+}
+
+function saveFlute2Mem6Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem6', today);
+}
+
+function saveFlute2Mem7Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem7', today);
+}
+
+function saveFlute2Mem8Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem8', today);
+}
+
+function saveFlute2Mem9ate() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem9', today);
+}
+
+function saveFlute2Mem10Late() {
+    var today = new Date();	
+	localStorage.setItem('lateflute2mem10', today);
+}
+</script>
+
 </body>
 
-<footer>
-</footer>
+<!--footer class="footerindex">Copyright - Web Systems and Technologies 9421B Group3 &copy; 2017 </footer-->
 </html>
