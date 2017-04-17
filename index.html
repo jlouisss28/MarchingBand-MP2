@@ -18,11 +18,7 @@
 		<ul class="navbar">
 			<li style="list-style: none"><a href="index.html">Check Attendance</a></li>
 			<li style="list-style: none"><a href="members.html">Members</a></li>
-<<<<<<< HEAD
-			<li style="list-style: none"><a href="#">Reports</a></li>
-=======
 			<li style="list-style: none"><a href="reports.html">Reports</a></li>
->>>>>>> 3733b3bbe596e14398586a2f0131a8cdf0b5c5fc
 			<li style="list-style: none"><a href="login.html">Log out</a></li>
 		</ul>
 	</div>
@@ -139,7 +135,7 @@
       <div class="members-column">
       <figure>
       <img src="images/1.png"  alt="Sample" width="50px">
-          <p class="name" id="1">Member1</p>
+          <p>Member1</p>
           <input type="button" value="Absent" class="btnAbsent" id="absent" onclick="saveFlute1Mem1Abs()">
           <input type="button" value="Late" class="btnLate" id="late" onclick="saveFlute1Mem1Late()">
       </figure>
@@ -293,62 +289,62 @@
       <figure>
       <img src="images/1.png"  alt="Sample" width="50px">
           <p id="mem1Clar1">Member1</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem1Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem1Late()">Late</button>
       </figure>
       <figure>
       <img src="images/2.png"  alt="Sample" width="50px">
           <p id="mem2Clar1">Member2</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem2Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem2Late()">Late</button>
       </figure>
       <figure>
       <img src="images/3.png"  alt="Sample" width="50px">
           <p id="mem3Clar1">Member3</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem3Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem3Late()">Late</button>
       </figure>
       <figure>
       <img src="images/4.png"  alt="Sample" width="50px">
           <p id="mem4Clar1">Member4</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem4Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem4Late()">Late</button>
       </figure>
       <figure>
       <img src="images/5.png"  alt="Sample" width="50px">
           <p id="mem5Clar1">Member5</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem5Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem5Late()">Late</button>
       </figure>
       <figure>
       <img src="images/6.png"  alt="Sample" width="50px">
           <p id="mem6Clar1">Member6</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem6Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem6Late()">Late</button>
       </figure>
       <figure>
       <img src="images/7.png"  alt="Sample" width="50px">
           <p id="mem7Clar1">Member7</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem7Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem7Late()">Late</button>
       </figure>
       <figure>
       <img src="images/8.png"  alt="Sample" width="50px">
           <p id="mem8Clar1">Member8</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem8Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem8Late()">Late</button>
       </figure>
       <figure>
       <img src="images/9.png"  alt="Sample" width="50px">
           <p id="mem9Clar1">Member9</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem9Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem9Late()">Late</button>
       </figure>
       <figure>
       <img src="images/10.png"  alt="Sample" width="50px">
           <p id="mem10Clar1">Member10</p>
-          <button class="btnAbsent" id="absent">Absent</button>
-          <button class="btnLate" id="late">Late</button>
+          <button class="btnAbsent" id="absent" onclick="saveClar1Mem10Abs()">Absent</button>
+          <button class="btnLate" id="late" onclick="saveClar1Mem10Late()">Late</button>
       </figure>
       </div>
     </div>
@@ -2163,208 +2159,7 @@ window.onclick = function(event) {
         modal23.style.display = "none";
     }
 }
-
-//absences
-function saveFlute1Mem1Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem1', today);
-}
-
-function saveFlute1Mem2Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem2', today);
-}
-
-function saveFlute1Mem3Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem3', today);
-}
-
-function saveFlute1Mem4Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem4', today);
-}
-
-function saveFlute1Mem5Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem5', today);
-}
-
-function saveFlute1Mem6Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem6', today);
-}
-
-function saveFlute1Mem7Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem7', today);
-}
-
-function saveFlute1Mem8Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem8', today);
-}
-
-function saveFlute1Mem9Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem9', today);
-}
-
-function saveFlute1Mem10Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute1mem10', today);
-}
-
-function saveFlute2Mem1Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentflute2mem1', today);
-}
-
-function saveFlute2Mem2Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem2', today);
-}
-
-function saveFlute2Mem3Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem3', today);
-}
-
-function saveFlute3Mem4Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem4', today);
-}
-
-function saveFlute2Mem5Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem5', today);
-}
-
-function saveFlute2Mem6Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem6', today);
-}
-
-function saveFlute2Mem7Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem7', today);
-}
-
-function saveFlute2Mem8Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem8', today);
-}
-
-function saveFlute2Mem9Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem9', today);
-}
-
-function saveFlute2Mem10Abs() {
-    var today = new Date();	
-	localStorage.setItem('absentFlute2Mem10', today);
-}
-
-//late
-function saveFlute1Mem1Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem1', today);
-}
-
-function saveFlute1Mem2Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem2', today);
-}
-
-function saveFlute1Mem3Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem3', today);
-}
-
-function saveFlute1Mem4Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem4', today);
-}
-
-function saveFlute1Mem5Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem5', today);
-}
-
-function saveFlute1Mem6Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem6', today);
-}
-
-function saveFlute1Mem7Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem7', today);
-}
-
-function saveFlute1Mem8Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem8', today);
-}
-
-function saveFlute1Mem9Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem9', today);
-}
-
-function saveFlute1Mem10Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute1mem10', today);
-}
-
-function saveFlute2Mem1Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem1', today);
-}
-
-function saveFlute2Mem2Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem2', today);
-}
-
-function saveFlute2Mem3Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem3', today);
-}
-
-function saveFlute2Mem4Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem4', today);
-}
-
-function saveFlute2Mem5Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem5', today);
-}
-
-function saveFlute2Mem6Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem6', today);
-}
-
-function saveFlute2Mem7Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem7', today);
-}
-
-function saveFlute2Mem8Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem8', today);
-}
-
-function saveFlute2Mem9ate() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem9', today);
-}
-
-function saveFlute2Mem10Late() {
-    var today = new Date();	
-	localStorage.setItem('lateflute2mem10', today);
-}
+,
 </script>
 
 </body>
