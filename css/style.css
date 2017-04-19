@@ -380,21 +380,31 @@ div.tab button.active {
     border: 1px dotted blue;
     padding: 6px;
     background-color: #ccc;
-    margin-right: 50%;
 }
 
 #absencesTardines_table {
     border: 5px dotted blue;
     padding: 10px;
     margin-top: 12px;
-    margin-right: 50%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
-#absencesTardines_table h2 {
+#atlist {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 50px; /* Firefox */
+    column-gap: 50px;
+}
+/*#absencesTardines_table h2 {
     font-size: 18px;
     margin-top: 0px;
     font-family: sans-serif;
-}
+}*/
+
 /*footer {
     clear: both;
     background-color: gray;
