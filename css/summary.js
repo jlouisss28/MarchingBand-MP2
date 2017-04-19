@@ -1,6 +1,7 @@
 var today = new Date(); 
 
-//absences
+
+//ABSENT
 function saveFlute1Mem1Abs() {	
 	localStorage.setItem('Flute 1 Member 1 Absent', today);
 }
@@ -165,7 +166,7 @@ function saveTrum1Mem1Abs() {
     localStorage.setItem('Trumpet 1 Member 1 Absent ', today);
 }
 
-function saveTrum1Mem21Abs() {
+function saveTrum1Mem2Abs() {
     localStorage.setItem('Trumpet 1 Member 2 Absent ', today);
 }
 
@@ -281,8 +282,129 @@ function saveTrum3Mem10Abs() {
     localStorage.setItem('Trumpet 3 Member 10 Absent ', today);
 }
 
+function saveTrom1Mem1Abs() {
+    localStorage.setItem('Trombone 1 Member 1 Absent ', today);
+}
 
-//late
+function saveTrom1Mem2Abs() {
+    localStorage.setItem('Trombone 1 Member 2 Absent ', today);
+}
+
+function saveTrom1Mem3Abs() {
+    localStorage.setItem('Trombone 1 Member 3 Absent ', today);
+}
+
+function saveTrom1Mem4Abs() {
+    localStorage.setItem('Trombone 1 Member 4 Absent ', today);
+}
+
+function saveTrom1Mem5Abs() {
+    localStorage.setItem('Trombone 1 Member 5 Absent ', today);
+}
+
+function saveTrom1Mem6Abs() {
+    localStorage.setItem('Trombone 1 Member 6 Absent ', today);
+}
+
+function saveTrom1Mem7Abs() {
+    localStorage.setItem('Trombone 1 Member 7 Absent ', today);
+}
+
+function saveTrom1Mem8Abs() {
+    localStorage.setItem('Trombone 1 Member 8 Absent ', today);
+}
+
+function saveTrom1Mem9Abs() {
+    localStorage.setItem('Trombone 1 Member 9 Absent ', today);
+}
+
+function saveTrom1Mem10Abs() {
+    localStorage.setItem('Trombone 1 Member 10 Absent ', today);
+}
+
+function saveTrom2Mem1Abs() {
+    localStorage.setItem('Trombone 2 Member 1 Absent ', today);
+}
+
+function saveTrom2Mem2Abs() {
+    localStorage.setItem('Trombone 2 Member 2 Absent ', today);
+}
+
+function saveTro2Mem3Abs() {
+    localStorage.setItem('Trombone 2 Member 3 Absent ', today);
+}
+
+function saveTrom2Mem4Abs() {
+    localStorage.setItem('Trombone 2 Member 4 Absent ', today);
+}
+
+function saveTrom2Mem5Abs() {
+    localStorage.setItem('Trombone 2 Member 5 Absent ', today);
+}
+
+function saveTrom2Mem6Abs() {
+    localStorage.setItem('Trombone 2 Member 6 Absent ', today);
+}
+
+function saveTrom2Mem7Abs() {
+    localStorage.setItem('Trombone 2 Member 7 Absent ', today);
+}
+
+function saveTrom2Mem8Abs() {
+    localStorage.setItem('Trombone 2 Member 8 Absent ', today);
+}
+
+function saveTrom2Mem9Abs() {
+    localStorage.setItem('Trombone 2 Member 9 Absent ', today);
+}
+
+function saveTrom2Mem10Abs() {
+    localStorage.setItem('Trombone 1 Member 10 Absent ', today);
+}
+
+function saveTrom3Mem1Abs() {
+    localStorage.setItem('Trombone 3 Member 1 Absent ', today);
+}
+
+function saveTrom3Mem2Abs() {
+    localStorage.setItem('Trombone 3 Member 2 Absent ', today);
+}
+
+function saveTrom3Mem3Abs() {
+    localStorage.setItem('Trombone 3 Member 3 Absent ', today);
+}
+
+function saveTrom3Mem4Abs() {
+    localStorage.setItem('Trombone 3 Member 4 Absent ', today);
+}
+
+function saveTrom3Mem5Abs() {
+    localStorage.setItem('Trombone 3 Member 5 Absent ', today);
+}
+
+function saveTrom3Mem6Abs() {
+    localStorage.setItem('Trombone 3 Member 6 Absent ', today);
+}
+
+function saveTrom3Mem7Abs() {
+    localStorage.setItem('Trombone 3 Member 7 Absent ', today);
+}
+
+function saveTrom3Mem8Abs() {
+    localStorage.setItem('Trombone 3 Member 8 Absent ', today);
+}
+
+function saveTrom3Mem9Abs() {
+    localStorage.setItem('Trombone 3 Member 9 Absent ', today);
+}
+
+function saveTrom3Mem10Abs() {
+    localStorage.setItem('Trombone 3 Member 10 Absent ', today);
+}
+
+
+
+//LATE
 function saveFlute1Mem1Late() {
 	localStorage.setItem('Flute 1 Member 1 Late ', today);
 }
@@ -563,6 +685,125 @@ function saveTrum3Mem10Late() {
     localStorage.setItem('Trumpet 3 Member 10 Late ', today);
 }
 
+function saveTrom1Mem1Late() {
+    localStorage.setItem('Trombone 1 Member 1 Late ', today);
+}
+
+function saveTrom1Mem2Late() {
+    localStorage.setItem('Trombone 1 Member 2 Late ', today);
+}
+
+function saveTrom1Mem3Late() {
+    localStorage.setItem('Trombone 1 Member 3 Late ', today);
+}
+
+function saveTrom1Mem4Late() { 
+    localStorage.setItem('Trombone 1 Member 4 Late ', today);
+}
+
+function saveTrom1Mem5Late() {
+    localStorage.setItem('Trombone 1 Member 5 Late ', today);
+}
+
+function saveTrom1Mem6Late() {
+    localStorage.setItem('Trombone 1 Member 6 Late ', today);
+}
+
+function saveTrom1Mem7Late() {
+    localStorage.setItem('Trombone 1 Member 7 Late ', today);
+}
+
+function saveTrom1Mem8Late() {
+    localStorage.setItem('Trombone 1 Member 8 Late ', today);
+}
+
+function saveTrom1Mem9Late() {
+    localStorage.setItem('Trombone 1 Member 9 Late ', today);
+}
+
+function saveTrom1Mem10Late() {
+    localStorage.setItem('Trombone 1 Member 10 Late ', today);
+}
+
+function saveTrom2Mem1Late() {
+    localStorage.setItem('Trombone 2 Member 1 Late ', today);
+}
+
+function saveTrom2Mem2Late() {
+    localStorage.setItem('Trombone 2 Member 2 Late ', today);
+}
+
+function saveTrom2Mem3Late() {
+    localStorage.setItem('Trombone 2 Member 3 Late ', today);
+}
+
+function saveTrom2Mem4Late() { 
+    localStorage.setItem('Trombone 2 Member 4 Late ', today);
+}
+
+function saveTrom2Mem5Late() {
+    localStorage.setItem('Trombone 2 Member 5 Late ', today);
+}
+
+function saveTrom2Mem6Late() {
+    localStorage.setItem('Trombone 2 Member 6 Late ', today);
+}
+
+function saveTrom2Mem7Late() {
+    localStorage.setItem('Trombone 2 Member 7 Late ', today);
+}
+
+function saveTrom2Mem8Late() {
+    localStorage.setItem('Trombone 2 Member 8 Late ', today);
+}
+
+function saveTrom2Mem9Late() {
+    localStorage.setItem('Trombone 2 Member 9 Late ', today);
+}
+
+function saveTrom2Mem10Late() {
+    localStorage.setItem('Trombone 2 Member 10 Late ', today);
+}
+
+function saveTrom3Mem1Late() {
+    localStorage.setItem('Trombone 3 Member 1 Late ', today);
+}
+
+function saveTrom3Mem2Late() {
+    localStorage.setItem('Trombone 3 Member 2 Late ', today);
+}
+
+function saveTrom3Mem3Late() {
+    localStorage.setItem('Trombone 3 Member 3 Late ', today);
+}
+
+function saveTrom3Mem4Late() { 
+    localStorage.setItem('Trombone 3 Member 4 Late ', today);
+}
+
+function saveTrom3Mem5Late() {
+    localStorage.setItem('Trombone 3 Member 5 Late ', today);
+}
+
+function saveTrom3Mem6Late() {
+    localStorage.setItem('Trombone 3 Member 6 Late ', today);
+}
+
+function saveTrom3Mem7Late() {
+    localStorage.setItem('Trombone 3 Member 7 Late ', today);
+}
+
+function saveTrom3Mem8Late() {
+    localStorage.setItem('Trombone 3 Member 8 Late ', today);
+}
+
+function saveTrom3Mem9Late() {
+    localStorage.setItem('Trombone 3 Member 9 Late ', today);
+}
+
+function saveTrom3Mem10Late() {
+    localStorage.setItem('Trombone 3 Member 10 Late ', today);
+}
 // clear
 function ClearAll() {
   localStorage.clear();
