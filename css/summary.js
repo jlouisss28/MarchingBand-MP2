@@ -814,11 +814,11 @@ function ClearAll() {
 function showAll() {
   if (CheckBrowser()) {
     var key = "";
-    var list = "<tr><th>Name</th>\n\n<th>Attendance</th></tr>";
+    var list = "<tr><th>&nbsp;&nbsp; Group &nbsp;&nbsp; Name &nbsp;&nbsp; &nbsp;&nbsp; Attendance</th>\n\n<th>Date</th></tr>";
     var i = 0;
     for (i = 0; i <= localStorage.length - 1; i++) {
       key = localStorage.key(i);
-      list += "<tr><td>" + key + "</td>\n<td>"
+      list += "<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;" + key + "&nbsp;&nbsp;</td>\n<td>"
           + localStorage.getItem(key) + "</td></tr>\n";
     }
     if (list == "<tr><th>Name</th>\n\n<th>Attendance</th></tr>") {
