@@ -562,6 +562,326 @@ function saveBariMem10Abs() {
     localStorage.setItem('Baritone Member 10 Absent ', today);
 }
 
+function saveBassMem1Abs() {
+    localStorage.setItem('Bass Member 1 Absent ', today);
+}
+
+function saveBassMem2Abs() {
+    localStorage.setItem('Bass Member 2 Absent ', today);
+}
+
+function saveBassMem3Abs() {
+    localStorage.setItem('Bass Member 3 Absent ', today);
+}
+
+function saveBassMem4Abs() {
+    localStorage.setItem('Bass Member 4 Absent ', today);
+}
+
+function saveBassMem5Abs() {
+    localStorage.setItem('Bass Member 5 Absent ', today);
+}
+
+function saveBassMem6Abs() {
+    localStorage.setItem('Bass Member 6 Absent ', today);
+}
+
+function saveBassMem7Abs() {
+    localStorage.setItem('Bass Member 7 Absent ', today);
+}
+
+function saveBassMem8Abs() {
+    localStorage.setItem('Bass Member 8 Absent ', today);
+}
+
+function saveBassMem9Abs() {
+    localStorage.setItem('Bass Member 9 Absent ', today);
+}
+
+function saveBassMem10Abs() {
+    localStorage.setItem('Bass Member 10 Absent ', today);
+}
+
+function saveSnareMem1Abs() {
+    localStorage.setItem('Snare Member 1 Absent ', today);
+}
+
+function saveSnareMem2Abs() {
+    localStorage.setItem('Snare Member 2 Absent ', today);
+}
+
+function saveSnareMem3Abs() {
+    localStorage.setItem('Snare Member 3 Absent ', today);
+}
+
+function saveSnareMem4Abs() {
+    localStorage.setItem('Snare Member 4 Absent ', today);
+}
+
+function saveSnareMem5Abs() {
+    localStorage.setItem('Snare Member 5 Absent ', today);
+}
+
+function saveSnareMem6Abs() {
+    localStorage.setItem('Snare Member 6 Absent ', today);
+}
+
+function saveSnareMem7Abs() {
+    localStorage.setItem('Snare Member 7 Absent ', today);
+}
+
+function saveSnareMem8Abs() {
+    localStorage.setItem('Snare Member 8 Absent ', today);
+}
+
+function saveSnareMem9Abs() {
+    localStorage.setItem('Snare Member 9 Absent ', today);
+}
+
+function saveSnareMem10Abs() {
+    localStorage.setItem('Snare Member 10 Absent ', today);
+}
+
+function savCymbalsMem1Abs() {
+    localStorage.setItem('Cymbals Member 1 Absent ', today);
+}
+
+function saveCymbalsMem2Abs() {
+    localStorage.setItem('Cymbals Member 2 Absent ', today);
+}
+
+function saveCymbalsMem3Abs() {
+    localStorage.setItem('Cymbals Member 3 Absent ', today);
+}
+
+function saveCymbalsMem4Abs() {
+    localStorage.setItem('Cymbals Member 4 Absent ', today);
+}
+
+function saveCymbalsMem5Abs() {
+    localStorage.setItem('Cymbals Member 5 Absent ', today);
+}
+
+function saveCymbalsMem6Abs() {
+    localStorage.setItem('Cymbals Member 6 Absent ', today);
+}
+
+function saveCymbalsMem7Abs() {
+    localStorage.setItem('Cymbals Member 7 Absent ', today);
+}
+
+function saveCymbalsMem8Abs() {
+    localStorage.setItem('Cymbals Member 8 Absent ', today);
+}Cymbals
+
+function saveCymbalsMem9Abs() {
+    localStorage.setItem('Cymbals Member 9 Absent ', today);
+}
+
+function saveCymbalsMem10Abs() {
+    localStorage.setItem('Cymbals Member 10 Absent ', today);
+}
+
+function saveQuadroMem1Abs() {
+    localStorage.setItem('Quadro Member 1 Absent ', today);
+}
+
+function saveQuadroMem2Abs() {
+    localStorage.setItem('Quadro Member 2 Absent ', today);
+}
+
+function saveQuadroMem3Abs() {
+    localStorage.setItem('Quadro Member 3 Absent ', today);
+}
+
+function saveQuadroMem4Abs() {
+    localStorage.setItem('Quadro Member 4 Absent ', today);
+}
+
+function saveQuadroMem5Abs() {
+    localStorage.setItem('Quadro Member 5 Absent ', today);
+}
+
+function saveQuadroMem6Abs() {
+    localStorage.setItem('Quadro Member 6 Absent ', today);
+}
+
+function saveQuadroMem7Abs() {
+    localStorage.setItem('Quadro Member 7 Absent ', today);
+}
+
+function saveQuadroMem8Abs() {
+    localStorage.setItem('Quadro Member 8 Absent ', today);
+}
+
+function saveQuadroMem9Abs() {
+    localStorage.setItem('Quadro Member 9 Absent ', today);
+}
+
+function saveQuadroMem10Abs() {
+    localStorage.setItem('Quadro Member 10 Absent ', today);
+}
+
+function saveSTenoroMem1Abs() {
+    localStorage.setItem('Saxophone Tenor Member 1 Absent ', today);
+}
+
+function saveSTenorMem2Abs() {
+    localStorage.setItem('Saxophone Tenor Member 2 Absent ', today);
+}
+
+function saveSTenorMem3Abs() {
+    localStorage.setItem('Saxophone Tenor Member 3 Absent ', today);
+}
+
+function saveSTenorMem4Abs() {
+    localStorage.setItem('Saxophone Tenor Member 4 Absent ', today);
+}
+
+function saveSTenorMem5Abs() {
+    localStorage.setItem('Saxophone Tenor Member 5 Absent ', today);
+}
+
+function saveSTenorMem6Abs() {
+    localStorage.setItem('Saxophone Tenor Member 6 Absent ', today);
+}
+
+function saveSTenorMem7Abs() {
+    localStorage.setItem('Saxophone Tenor Member 7 Absent ', today);
+}
+
+function saveSTenorMem8Abs() {
+    localStorage.setItem('Saxophone Tenor Member 8 Absent ', today);
+}
+
+function saveSTenorMem9Abs() {
+    localStorage.setItem('Saxophone Tenor Member 9 Absent ', today);
+}
+
+function saveSTenorMem10Abs() {
+    localStorage.setItem('Saxophone Tenor Member 10 Absent ', today);
+}
+
+function saveSA1Mem1Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 1 Absent ', today);
+}
+
+function saveSA1Mem2Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 2 Absent ', today);
+}
+
+function saveSA1Mem3Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 3 Absent ', today);
+}
+
+function saveSA1Mem4Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 4 Absent ', today);
+}
+
+function saveSA1Mem5Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 5 Absent ', today);
+}
+
+function saveSA1Mem6Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 6 Absent ', today);
+}
+
+function saveSA1oMem7Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 7 Absent ', today);
+}
+
+function saveSA1Mem8Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 8 Absent ', today);
+}
+
+function saveSA1Mem9Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 9 Absent ', today);
+}
+
+function saveSA1Mem10Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 10 Absent ', today);
+}
+
+function saveSA2Mem1Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 1 Absent ', today);
+}
+
+function saveSA2Mem2Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 2 Absent ', today);
+}
+
+function saveSA2Mem3Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 3 Absent ', today);
+}
+
+function saveSA2Mem4Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 4 Absent ', today);
+}
+
+function saveSA2Mem5Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 5 Absent ', today);
+}
+
+function saveSA2Mem6Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 6 Absent ', today);
+}
+
+function saveSA2Mem7Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 7 Absent ', today);
+}
+
+function saveSA2Mem8Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 8 Absent ', today);
+}
+
+function saveSA2Mem9Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 9 Absent ', today);
+}
+
+function saveSA2Mem10Abs() {
+    localStorage.setItem('Saxophone Alto 2 Member 10 Absent ', today);
+}
+
+function saveSBariMem1Abs() {
+    localStorage.setItem('Saxophone Baritone Member 1 Absent ', today);
+}
+
+function saveSBariMem2Abs() {
+    localStorage.setItem('Saxophone Baritone Member 2 Absent ', today);
+}
+
+function saveSBariMem3Abs() {
+    localStorage.setItem('Saxophone Baritone Member 3 Absent ', today);
+}
+
+function saveSBariMem4Abs() {
+    localStorage.setItem('Saxophone Baritone Member 4 Absent ', today);
+}
+
+function saveSBariMem5Abs() {
+    localStorage.setItem('Saxophone Baritone Member 5 Absent ', today);
+}
+
+function saveSBariMem6Abs() {
+    localStorage.setItem('Saxophone Baritone Member 6 Absent ', today);
+}
+
+function saveSBariMem7Abs() {
+    localStorage.setItem('Saxophone Baritone Member 7 Absent ', today);
+}
+
+function saveSBariMem8Abs() {
+    localStorage.setItem('Saxophone Baritone Member 8 Absent ', today);
+}
+
+function saveSBariMem9Abs() {
+    localStorage.setItem('Saxophone Baritone Member 9 Absent ', today);
+}
+
+function saveSBariMem10Abs() {
+    localStorage.setItem('Saxophone Baritone Member 10 Absent ', today);
+}
+
 //LATE
 function saveFlute1Mem1Late() {
 	localStorage.setItem('Flute 1 Member 1 Late ', today);
@@ -1041,6 +1361,406 @@ function saveFH2Mem9Late() {
 
 function saveFH2Mem10Late() {
     localStorage.setItem('French Horn 2 Member 10 Late ', today);
+}
+
+function saveBajoMem1Late() {
+    localStorage.setItem('Bajo Member 1 Late ', today);
+}
+
+function saveBajoMem2Late() {
+    localStorage.setItem('Bajo Member 2 Late ', today);
+}
+
+function saveBajoMem3Late() {
+    localStorage.setItem('Bajo Member 3 Late ', today);
+}
+
+function saveBajoMem4Late() {
+    localStorage.setItem('Bajo Member 4 Late ', today);
+}
+
+function saveBajoMem5Late() {
+    localStorage.setItem('Bajo Member 5 Late ', today);
+}
+
+function saveBajoMem6Late() {
+    localStorage.setItem('Bajo Member 6 Late ', today);
+}
+
+function saveBajoMem7Late() {
+    localStorage.setItem('Bajo Member 7 Late ', today);
+}
+
+function saveBajoMem8Late() {
+    localStorage.setItem('Bajo Member 8 Late ', today);
+}
+
+function saveBajoMem9Late() {
+    localStorage.setItem('Bajo Member 9 Late ', today);
+}
+
+function saveBajoMem10Late() {
+    localStorage.setItem('Bajo Member 10 Late ', today);
+}
+
+function saveBariMem1Late() {
+    localStorage.setItem('Baritone Member 1 Late ', today);
+}
+
+function saveBariMem2Late() {
+    localStorage.setItem('Baritone Member 2 Late ', today);
+}
+
+function saveBariMem3Late() {
+    localStorage.setItem('Baritone Member 3 Late ', today);
+}
+
+function saveBariMem4Late() {
+    localStorage.setItem('Baritone Member 4 Late ', today);
+}
+
+function saveBariMem5Late() {
+    localStorage.setItem('Baritone Member 5 Late ', today);
+}
+
+function saveBariMem6Late() {
+    localStorage.setItem('Baritone Member 6 Late ', today);
+}
+
+function saveBariMem7Late() {
+    localStorage.setItem('Baritone Member 7 Late ', today);
+}
+
+function saveBariMem8Late() {
+    localStorage.setItem('Baritone Member 8 Late ', today);
+}
+
+function saveBariMem9Late() {
+    localStorage.setItem('Baritone Member 9 Late ', today);
+}
+
+function saveBariMem10Late() {
+    localStorage.setItem('Baritone Member 10 Late ', today);
+}
+
+function saveBassMem1Late() {
+    localStorage.setItem('Bass Member 1 Late ', today);
+}
+
+function saveBassMem2Late() {
+    localStorage.setItem('Bass Member 2 Late ', today);
+}
+
+function saveBassMem3Late() {
+    localStorage.setItem('Bass Member 3 Late ', today);
+}
+
+function saveBassMem4Late() {
+    localStorage.setItem('Bass Member 4 Late ', today);
+}
+
+function saveBassMem5Late() {
+    localStorage.setItem('Bass Member 5 Late ', today);
+}
+
+function saveBassMem6Late() {
+    localStorage.setItem('Bass Member 6 Late ', today);
+}
+
+function saveBassMem7Late() {
+    localStorage.setItem('Bass Member 7 Late ', today);
+}
+
+function saveBassMem8Late() {
+    localStorage.setItem('Bass Member 8 Late ', today);
+}
+
+function saveBassMem9Late() {
+    localStorage.setItem('Bass Member 9 Late ', today);
+}
+
+function saveBassMem10Late() {
+    localStorage.setItem('Bass Member 10 Late ', today);
+}
+
+function saveSnareMem1Late() {
+    localStorage.setItem('Snare Member 1 Late ', today);
+}
+
+function saveSnareMem2Late() {
+    localStorage.setItem('Snare Member 2 Late ', today);
+}
+
+function saveSnareMem3Late() {
+    localStorage.setItem('Snare Member 3 Late ', today);
+}
+
+function saveSnareMem4Late() {
+    localStorage.setItem('Snare Member 4 Late ', today);
+}
+
+function saveSnareMem5Late() {
+    localStorage.setItem('Snare Member 5 Late ', today);
+}
+
+function saveSnareMem6Late() {
+    localStorage.setItem('Snare Member 6 Late ', today);
+}
+
+function saveSnareMem7Late() {
+    localStorage.setItem('Snare Member 7 Late ', today);
+}
+
+function saveSnareMem8Late() {
+    localStorage.setItem('Snare Member 8 Late ', today);
+}
+
+function saveSnareMem9Late() {
+    localStorage.setItem('Snare Member 9 Late ', today);
+}
+
+function saveSnareMem10Late() {
+    localStorage.setItem('Snare Member 10 Late ', today);
+}
+
+function saveCymbalsMem1Late() {
+    localStorage.setItem('Cymbals Member 1 Late ', today);
+}
+
+function saveCymbalsMem2Late() {
+    localStorage.setItem('Cymbals Member 2 Late ', today);
+}
+
+function saveCymbalsMem3Late() {
+    localStorage.setItem('Cymbals Member 3 Late ', today);
+}
+
+function saveCymbalsMem4Late() {
+    localStorage.setItem('Cymbals Member 4 Late ', today);
+}
+
+function saveCymbalsMem5Late() {
+    localStorage.setItem('Cymbals Member 5 Late ', today);
+}
+
+function saveCymbalsMem6Late() {
+    localStorage.setItem('Cymbals Member 6 Late ', today);
+}
+
+function saveCymbalsMem7Late() {
+    localStorage.setItem('Cymbals Member 7 Late ', today);
+}
+
+function saveCymbalsMem8Late() {
+    localStorage.setItem('Cymbals Member 8 Late ', today);
+}
+
+function saveCymbalsMem9Late() {
+    localStorage.setItem('Cymbals Member 9 Late ', today);
+}
+
+function saveCymbalsMem10Late() {
+    localStorage.setItem('Cymbals Member 10 Late ', today);
+}
+
+function saveQuadroMem1Late() {
+    localStorage.setItem('Quadro Member 1 Late ', today);
+}
+
+function saveQuadroMem2Late() {
+    localStorage.setItem('Quadro Member 2 Late ', today);
+}
+
+function saveQuadroMem3Late() {
+    localStorage.setItem('Quadro Member 3 Late ', today);
+}
+
+function saveQuadroMem4Late() {
+    localStorage.setItem('Quadro Member 4 Late ', today);
+}
+
+function saveQuadroMem5Late() {
+    localStorage.setItem('Quadro Member 5 Late ', today);
+}
+
+function saveQuadroMem6Late() {
+    localStorage.setItem('Quadro Member 6 Late ', today);
+}
+
+function saveQuadroMem7Late() {
+    localStorage.setItem('Quadro Member 7 Late ', today);
+}
+
+function saveQuadroMem8Late() {
+    localStorage.setItem('Quadro Member 8 Late ', today);
+}
+
+function saveQuadroMem9Late() {
+    localStorage.setItem('Quadro Member 9 Late ', today);
+}
+
+function saveQuadroMem10Late() {
+    localStorage.setItem('Quadro Member 10 Late ', today);
+}
+
+function saveSTenoroMem1Late() {
+    localStorage.setItem('Saxophone Tenor Member 1 Late ', today);
+}
+
+function saveSTenorMem2Late() {
+    localStorage.setItem('Saxophone Tenor Member 2 Late ', today);
+}
+
+function saveSTenorMem3Late() {
+    localStorage.setItem('Saxophone Tenor Member 3 Late ', today);
+}
+
+function saveSTenorMem4Late() {
+    localStorage.setItem('Saxophone Tenor Member 4 Late ', today);
+}
+
+function saveSTenorMem5Late() {
+    localStorage.setItem('Saxophone Tenor Member 5 Late ', today);
+}
+
+function saveSTenorMem6Late() {
+    localStorage.setItem('Saxophone Tenor Member 6 Late ', today);
+}
+
+function saveSTenorMem7Late() {
+    localStorage.setItem('Saxophone Tenor Member 7 Late ', today);
+}
+
+function saveSTenorMem8Late() {
+    localStorage.setItem('Saxophone Tenor Member 8 Late ', today);
+}
+
+function saveSTenorMem9Late() {
+    localStorage.setItem('Saxophone Tenor Member 9 Late ', today);
+}
+
+function saveSTenorMem10Late() {
+    localStorage.setItem('Saxophone Tenor Member 10 Late ', today);
+}
+
+function saveSA1Mem1Abs() {
+    localStorage.setItem('Saxophone Alto 1 Member 1 Absent ', today);
+}
+
+function saveSA1Mem2Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 2 Late ', today);
+}
+
+function saveSA1Mem3Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 3 Late ', today);
+}
+
+function saveSA1Mem4Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 4 Late ', today);
+}
+
+function saveSA1Mem5Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 5 Late ', today);
+}
+
+function saveSA1Mem6Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 6 Late ', today);
+}
+
+function saveSA1oMem7Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 7 Late ', today);
+}
+
+function saveSA1Mem8Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 8 Late ', today);
+}
+
+function saveSA1Mem9Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 9 Late ', today);
+}
+
+function saveSA1Mem10Late() {
+    localStorage.setItem('Saxophone Alto 1 Member 10 Late ', today);
+}
+
+function saveSA2Mem1Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 1 Late ', today);
+}
+
+function saveSA2Mem2Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 2 Late ', today);
+}
+
+function saveSA2Mem3Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 3 Late ', today);
+}
+
+function saveSA2Mem4Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 4 Late ', today);
+}
+
+function saveSA2Mem5LateLate() {
+    localStorage.setItem('Saxophone Alto 2 Member 5 Late ', today);
+}
+
+function saveSA2Mem6Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 6 Late ', today);
+}
+
+function saveSA2Mem7Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 7 Late ', today);
+}
+
+function saveSA2Mem8Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 8 Late ', today);
+}
+
+function saveSA2Mem9Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 9 Late ', today);
+}
+
+function saveSA2Mem10Late() {
+    localStorage.setItem('Saxophone Alto 2 Member 10 Late ', today);
+}
+
+function saveSBariMem1Late() {
+    localStorage.setItem('Saxophone Baritone Member 1 Late ', today);
+}
+
+function saveSBariMem2Late() {
+    localStorage.setItem('Saxophone Baritone Member 2 Late ', today);
+}
+
+function saveSBariMem3Late() {
+    localStorage.setItem('Saxophone Baritone Member 3 Late ', today);
+}
+
+function saveSBariMem4Late() {
+    localStorage.setItem('Saxophone Baritone Member 4 Late ', today);
+}
+
+function saveSBariMem5Late() {
+    localStorage.setItem('Saxophone Baritone Member 5 Late ', today);
+}
+
+function saveSBariMem6Late() {
+    localStorage.setItem('Saxophone Baritone Member 6 Late ', today);
+}
+
+function saveSBariMem7Late() {
+    localStorage.setItem('Saxophone Baritone Member 7 Late ', today);
+}
+
+function saveSBariMem8Late() {
+    localStorage.setItem('Saxophone Baritone Member 8 Late ', today);
+}
+
+function saveSBariMem9Late() {
+    localStorage.setItem('Saxophone Baritone Member 9 Late ', today);
+}
+
+function saveSBariMem10Late() {
+    localStorage.setItem('Saxophone Baritone Member 10 Late ', today);
 }
 
 // clear
