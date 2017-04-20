@@ -330,7 +330,7 @@ function saveTrom2Mem2Abs() {
     localStorage.setItem('Trombone 2 Member 2 Absent ', today);
 }
 
-function saveTro2Mem3Abs() {
+function saveTrom2Mem3Abs() {
     localStorage.setItem('Trombone 2 Member 3 Absent ', today);
 }
 
@@ -402,7 +402,165 @@ function saveTrom3Mem10Abs() {
     localStorage.setItem('Trombone 3 Member 10 Absent ', today);
 }
 
+function saveFH1Mem1Abs() {
+    localStorage.setItem('French Horn 1 Member 1 Absent ', today);
+}
 
+function saveFH1Mem2Abs() {
+    localStorage.setItem('French Horn 1 Member 2 Absent ', today);
+}
+
+function saveFH1Mem3Abs() {
+    localStorage.setItem('French Horn 1 Member 3 Absent ', today);
+}
+
+function saveFH1Mem4Abs() {
+    localStorage.setItem('French Horn 1 Member 4 Absent ', today);
+}
+
+function saveFH1Mem5Abs() {
+    localStorage.setItem('French Horn 1 Member 5 Absent ', today);
+}
+
+function saveFH1Mem6Abs() {
+    localStorage.setItem('French Horn 1 Member 6 Absent ', today);
+}
+
+function saveFH1Mem7Abs() {
+    localStorage.setItem('French Horn 1 Member 7 Absent ', today);
+}
+
+function saveFH1Mem8Abs() {
+    localStorage.setItem('French Horn 1 Member 8 Absent ', today);
+}
+
+function saveFH1Mem9Abs() {
+    localStorage.setItem('French Horn 1 Member 9 Absent ', today);
+}
+
+function saveFH1Mem10Abs() {
+    localStorage.setItem('French Horn 1 Member 10 Absent ', today);
+}
+
+function saveFH2Mem1Abs() {
+    localStorage.setItem('French Horn 2 Member 1 Absent ', today);
+}
+
+function saveFH2Mem2Abs() {
+    localStorage.setItem('French Horn 2 Member 2 Absent ', today);
+}
+
+function saveFH2Mem3Abs() {
+    localStorage.setItem('French Horn 2 Member 3 Absent ', today);
+}
+
+function saveFH2Mem4Abs() {
+    localStorage.setItem('French Horn 2 Member 4 Absent ', today);
+}
+
+function saveFH2Mem5Abs() {
+    localStorage.setItem('French Horn 2 Member 5 Absent ', today);
+}
+
+function saveFH2Mem6Abs() {
+    localStorage.setItem('French Horn 2 Member 6 Absent ', today);
+}
+
+function saveFH2Mem7Abs() {
+    localStorage.setItem('French Horn 2 Member 7 Absent ', today);
+}
+
+function saveFH2Mem8Abs() {
+    localStorage.setItem('French Horn 2 Member 8 Absent ', today);
+}
+
+function saveFH2Mem9Abs() {
+    localStorage.setItem('French Horn 2 Member 9 Absent ', today);
+}
+
+function saveFH2Mem10Abs() {
+    localStorage.setItem('French Horn 1 Member 10 Absent ', today);
+}
+
+function saveBajoMem1Abs() {
+    localStorage.setItem('Bajo Member 1 Absent ', today);
+}
+
+function saveBajoMem2Abs() {
+    localStorage.setItem('Bajo Member 2 Absent ', today);
+}
+
+function saveBajoMem3Abs() {
+    localStorage.setItem('Bajo Member 3 Absent ', today);
+}
+
+function saveBajoMem4Abs() {
+    localStorage.setItem('Bajo Member 4 Absent ', today);
+}
+
+function saveBajoMem5Abs() {
+    localStorage.setItem('Bajo Member 5 Absent ', today);
+}
+
+function saveBajoMem6Abs() {
+    localStorage.setItem('Bajo Member 6 Absent ', today);
+}
+
+function saveBajoMem7Abs() {
+    localStorage.setItem('Bajo Member 7 Absent ', today);
+}
+
+function saveBajoMem8Abs() {
+    localStorage.setItem('Bajo Member 8 Absent ', today);
+}
+
+function saveBajoMem9Abs() {
+    localStorage.setItem('Bajo Member 9 Absent ', today);
+}
+
+function saveBajoMem10Abs() {
+    localStorage.setItem('Bajo Member 10 Absent ', today);
+}
+
+function saveBariMem1Abs() {
+    localStorage.setItem('Baritone Member 1 Absent ', today);
+}
+
+function saveBariMem2Abs() {
+    localStorage.setItem('Baritone Member 2 Absent ', today);
+}
+
+function saveBariMem3Abs() {
+    localStorage.setItem('Baritone Member 3 Absent ', today);
+}
+
+function saveBariMem4Abs() {
+    localStorage.setItem('Baritone Member 4 Absent ', today);
+}
+
+function saveBariMem5Abs() {
+    localStorage.setItem('Baritone Member 5 Absent ', today);
+}
+
+function saveBariMem6Abs() {
+    localStorage.setItem('Baritone Member 6 Absent ', today);
+}
+
+function saveBariMem7Abs() {
+    localStorage.setItem('Baritone Member 7 Absent ', today);
+}
+
+function saveBariMem8Abs() {
+    localStorage.setItem('Baritone Member 8 Absent ', today);
+}
+
+function saveBariMem9Abs() {
+    localStorage.setItem('Baritone Member 9 Absent ', today);
+}
+
+function saveBariMem10Abs() {
+    localStorage.setItem('Baritone Member 10 Absent ', today);
+}
 
 //LATE
 function saveFlute1Mem1Late() {
@@ -804,6 +962,87 @@ function saveTrom3Mem9Late() {
 function saveTrom3Mem10Late() {
     localStorage.setItem('Trombone 3 Member 10 Late ', today);
 }
+
+function saveFH1Mem1Late() {
+    localStorage.setItem('French Horn 1 Member 1 Late ', today);
+}
+
+function saveFH1Mem2Late() {
+    localStorage.setItem('French Horn 1 Member 2 Late ', today);
+}
+
+function saveFH1Mem3Late() {
+    localStorage.setItem('French Horn 1 Member 3 Late ', today);
+}
+
+function saveFH1Mem4Late() { 
+    localStorage.setItem('French Horn 1 Member 4 Late ', today);
+}
+
+function saveFH1Mem5Late() {
+    localStorage.setItem('French Horn 1 Member 5 Late ', today);
+}
+
+function saveFH1Mem6Late() {
+    localStorage.setItem('French Horn 1 Member 6 Late ', today);
+}
+
+function saveFH1Mem7Late() {
+    localStorage.setItem('French Horn 1 Member 7 Late ', today);
+}
+
+function saveFH1Mem8Late() {
+    localStorage.setItem('French Horn 1 Member 8 Late ', today);
+}
+
+function saveFH1Mem9Late() {
+    localStorage.setItem('French Horn 1 Member 9 Late ', today);
+}
+
+function saveFH1Mem10Late() {
+    localStorage.setItem('French Horn 1 Member 10 Late ', today);
+}
+
+function saveFH2Mem1Late() {
+    localStorage.setItem('French Horn 2 Member 1 Late ', today);
+}
+
+function saveFH2Mem2Late() {
+    localStorage.setItem('French Horn 2 Member 2 Late ', today);
+}
+
+function saveFH2Mem3Late() {
+    localStorage.setItem('French Horn 2 Member 3 Late ', today);
+}
+
+function saveFH2Mem4Late() { 
+    localStorage.setItem('French Horn 2 Member 4 Late ', today);
+}
+
+function saveFH2Mem5Late() {
+    localStorage.setItem('French Horn 2 Member 5 Late ', today);
+}
+
+function saveFH2Mem6Late() {
+    localStorage.setItem('French Horn 2 Member 6 Late ', today);
+}
+
+function saveFH2Mem7Late() {
+    localStorage.setItem('French Horn 2 Member 7 Late ', today);
+}
+
+function saveFH2Mem8Late() {
+    localStorage.setItem('French Horn 2 Member 8 Late ', today);
+}
+
+function saveFH2Mem9Late() {
+    localStorage.setItem('French Horn 2 Member 9 Late ', today);
+}
+
+function saveFH2Mem10Late() {
+    localStorage.setItem('French Horn 2 Member 10 Late ', today);
+}
+
 // clear
 function ClearAll() {
   localStorage.clear();
