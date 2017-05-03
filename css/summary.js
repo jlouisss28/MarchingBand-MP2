@@ -672,7 +672,7 @@ function saveCymbalsMem7Abs() {
 
 function saveCymbalsMem8Abs() {
     localStorage.setItem('Cymbals Member 8 Absent ', today);
-}Cymbals
+}
 
 function saveCymbalsMem9Abs() {
     localStorage.setItem('Cymbals Member 9 Absent ', today);
