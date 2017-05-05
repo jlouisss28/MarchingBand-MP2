@@ -397,7 +397,7 @@ div.tab button.active {
 
     -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
     -moz-column-gap: 50px; /* Firefox */
-    column-gap: 50px;
+    column-gap: 30px;
 }
 /*#absencesTardines_table h2 {
     font-size: 18px;

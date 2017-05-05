@@ -1781,14 +1781,17 @@ function ClearAll() {
 function showAll() {
   if (CheckBrowser()) {
 	
-	var date = localStorage.getItem(key);
+	var today = new Date();
+	var month = today.getMonth();
+	var day = today.getDate();
+	var yr = today.getFullYear();
     var key = "";
-    var list = "<tr><th>Name</th></tr>";
+    var list = "<tr><th>" + month + "/" + day + "/" + yr + "</th></tr><tr><th>Name</th></tr>";
     var i = 0;
 	
     for (i = 0; i <= localStorage.length - 1; i++) {
       key = localStorage.key(i);
-      list += "<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;" + key;
+      list += "<tr><td>" + key;
     }
     if (list == "<tr><th>Name</th>\n\n<th>Attendance</th></tr>") {
       list += "<tr><td><i>empty</i></td>\n\n<td><i>empty</i></td></tr>";
